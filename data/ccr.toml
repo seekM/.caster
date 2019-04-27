@@ -1,0 +1,52 @@
+ccr_on = true
+enabling_order = [ "sequel",]
+
+[app]
+"flash develop test" = false
+"git bash" = false
+GitBashRule = false
+"visual studio code continuous" = false
+
+[global]
+LaTeX = false
+NavigationNon = false
+punctuation = true
+Java = false
+VHDL = false
+Alphabet = false
+Punctuation = false
+hacks = false
+CPP = false
+"C plus plus" = false
+numbers = true
+Haxe = false
+Python = false
+alphabet = true
+Javascript = false
+"mark down" = false
+Dart = false
+HTML = false
+matlab = false
+Bash = false
+sequel = true
+Rlang = false
+VoiceDevCommands = false
+CSharp = false
+Matlab = false
+Navigation = false
+Rust = false
+Prolog = false
+latex = false
+Markdown = false
+Numbers = false
+SQL = false
+Go = false
+"C sharp" = false
+prolog = false
+navigation = true
+"voice dev commands" = false
+are = false
+
+[selfmod]
+"chain alias" = true
+history = true

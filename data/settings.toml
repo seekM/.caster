@@ -1,0 +1,149 @@
+[pronunciations]
+jquery = "J query"
+"c++" = "C plus plus"
+
+[paths]
+USER_DIR = "C:/Users/User/.caster"
+WSR_PATH = "C:/Windows/Speech/Common/sapisvr.exe"
+SETTINGS_WINDOW_PATH = "C:/dev/Natlink-User/Caster/castervoice/asynch/settingswindow.py"
+CONFIGDEBUGTXT_PATH = "C:/Users/User/.caster/data/configdebug.txt"
+SAVED_CLIPBOARD_PATH = "C:/Users/User/.caster/data/clipboard.toml"
+MEDIA_PATH = "C:/dev/Natlink-User/Caster/castervoice/bin/media"
+DLL_PATH = "C:/dev/Natlink-User/Caster/castervoice/lib/dll/"
+BRINGME_PATH = "C:/Users/User/.caster/data/bringme.toml"
+WXPYTHON_PATH = "C:/Python27/Lib/site-packages/wx-3.0-msw"
+LOG_PATH = "C:/Users/User/.caster/log.txt"
+ENGINE_PATH = "C:/Program Files (x86)/Nuance/NaturallySpeaking13/Program/natspeak.exe"
+SIKULI_IDE = "C:/dev/Sikuli/sikulix.jar"
+HOMUNCULUS_PATH = "C:/dev/Natlink-User/Caster/castervoice/asynch/hmc/h_launch.py"
+BRINGME_DEFAULTS_PATH = "C:/dev/Natlink-User/Caster/castervoice/bin/share/bringme.toml.defaults"
+DOUGLAS_PATH = "C:/dev/Natlink-User/Caster/castervoice/asynch/mouse/grids.py"
+REMOTE_DEBUGGER_PATH = ""
+BASE_PATH = "C:/dev/Natlink-User/Caster/castervoice"
+SIKULI_RUNNER = "C:/dev/Sikuli/sikulix.jar"
+LEGION_PATH = "C:/dev/Natlink-User/Caster/castervoice/asynch/mouse/legion.py"
+CCR_CONFIG_PATH = "C:/Users/User/.caster/data/ccr.toml"
+REBOOT_PATH = "C:/dev/Natlink-User/Caster/castervoice/bin/reboot.bat"
+RECORDED_MACROS_PATH = "C:/Users/User/.caster/data/recorded_macros.toml"
+SIKULI_SERVER_PATH = "C:/dev/Natlink-User/Caster/castervoice/asynch/sikuli/server/xmlrpc_server.sikuli"
+FILTER_DEFS_PATH = "C:/Users/User/.caster/data/words.txt"
+REBOOT_PATH_WSR = "C:/dev/Natlink-User/Caster/castervoice/bin/reboot_wsr.bat"
+RAINBOW_PATH = "C:/dev/Natlink-User/Caster/castervoice/asynch/mouse/grids.py"
+PYTHONW = "C:/Python27/pythonw"
+ALIAS_PATH = "C:/Users/User/.caster/data/aliases.toml"
+SIKULI_SCRIPTS_PATH = "C:/Users/User/.caster/sikuli"
+
+[feature_rules]
+again = true
+alias = true
+chainalias = true
+hmc = true
+
+[python]
+pip = "pip"
+version = "python"
+automatic_settings = true
+
+[apps]
+notepadplusplus = false
+outlook = false
+firefox = false
+explorer = false
+rainbow = false
+excel = false
+typora = false
+lyx = false
+ssms = false
+visualstudiocode = false
+atom = false
+msvc = false
+githubdesktop = false
+kdiff3 = false
+acrobat = false
+fman = false
+jetbrains = false
+filedialogue = false
+flashdevelop = false
+foxitreader = false
+chrome = false
+cmd = false
+eclipse = false
+douglas = false
+dragon = false
+legion = false
+wsr = false
+emacs = false
+totalcmd = false
+sqldeveloper = false
+winword = false
+visualstudio = false
+rstudio = false
+gitbash = false
+sublime = false
+gitter = false
+
+[miscellaneous]
+max_ccr_repetitions = 16
+online_mode = true
+legion_vertical_columns = 30
+print_rdescripts = true
+keypress_wait = 50
+history_playback_delay_secs = 1.0
+integer_remap_crash_fix = false
+atom_palette_wait = 30
+use_aenea = false
+dev_commands = true
+integer_remap_opt_in = false
+rdp_mode = false
+
+[sikuli]
+version = "1.1.4"
+enabled = true
+
+["one time warnings"]
+
+[nodes]
+
+[formats.HTML]
+secondary_format = [ 5, 2,]
+text_format = [ 5, 0,]
+
+[formats.Java]
+secondary_format = [ 2, 1,]
+text_format = [ 3, 1,]
+
+[formats.Rust]
+secondary_format = [ 2, 1,]
+text_format = [ 5, 3,]
+
+[formats.sequel]
+secondary_format = [ 1, 3,]
+text_format = [ 5, 3,]
+
+[formats.Python]
+secondary_format = [ 2, 1,]
+text_format = [ 5, 3,]
+
+[formats.matlab]
+secondary_format = [ 1, 3,]
+text_format = [ 3, 1,]
+
+[formats."C plus plus"]
+secondary_format = [ 2, 1,]
+text_format = [ 3, 1,]
+
+[formats.Dart]
+secondary_format = [ 2, 1,]
+text_format = [ 3, 1,]
+
+[formats."C sharp"]
+secondary_format = [ 2, 1,]
+text_format = [ 3, 1,]
+
+[formats._default]
+secondary_format = [ 1, 0,]
+text_format = [ 5, 0,]
+
+[formats.Javascript]
+secondary_format = [ 2, 1,]
+text_format = [ 3, 1,]

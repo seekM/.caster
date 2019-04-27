@@ -1,0 +1,19 @@
+Notepad++
+=========
+(line | zeile) 
+(save | speichern)
+(save as | speichern als)
+
+Gitter
+======
+(rooms | raeume)
+(search | suche)
+chat
+edit
+(send | senden)
+# TODO close sikuli
+
+General
+=======
+profil (wechseln | change) | Sikuli
+
