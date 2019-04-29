@@ -22,7 +22,7 @@ from castervoice.lib.dfplus.state.short import R
 
 
 class ThunderbirdRule(MergeRule):
-    pronunciation = "fire fox"
+    pronunciation = "thunderbird"
 
     mapping = {
         "(new message | neue nachricht)":
