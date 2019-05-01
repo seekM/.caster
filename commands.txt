@@ -4,16 +4,80 @@ Notepad++
 (save | speichern)
 (save as | speichern als)
 
+Thunderbird
+===========
+(new message | neue nachricht)
+(reply | antworten)
+(reply all | allen antworten)
+(forward message | nachricht weiterleiten)
+(retrieve | abholen)
+(expand | aufklappen)
+(collapse | einklappen)
+(toggle read | gelesen | ungelesen)
+(no | kein) spam
+spam
+(toggle star | favorit)
+(next message | naechste nachricht)
+(previous message | vorherige nachricht)
+toggle pane
+(next | naechster) tab
+(previous | vorheriger) tab
+(attach file | datei anhaengen)
+
+Gitter & Slack
+==============
+(search | suche)
+edit
+(bold | fett)
+(emphasize | hervorheben)
+(new line | neue zeile
+(block quote | zitat)
+(mention | erwaehnen)
+(short code | kurzer code)
+(insert code | code einfuegen)
+
 Gitter
 ======
 (rooms | raeume)
-(search | suche)
 chat
-edit
-(send | senden)
-# TODO close sikuli
+(gitter close | gitter schließen) # via sikuli
+(insert link | link einfuegen)
+
+Slack
+=====
+(up | hoch)
+(down | runter)
+(next message | naechste nachricht)
+(previous message | vorherige nachricht)
+
+Explorer & File Dialogue
+========================
+get up [<n>]
+get back [<n>]
+get forward [<n>]
+new folder
+address bar
+search
+left pane
+center pane
+sort
+
+Explorer
+========
+explorer (datei | file) # via sikuli # erweitertes menue muss sichtbar sein
+
+File Dialogue
+=============
+organize
+(dateiname | filename)
+(dateityp | file type)
+
+Sikuli
+======
+launch sick IDE
+launch sick server
+terminate sick server
 
 General
 =======
-profil (wechseln | change) | Sikuli
-
+profil (wechseln | change) # via sikuli

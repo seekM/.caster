@@ -26,14 +26,26 @@ class GitterRule(MergeRule):
             R(Key("escape") + Key("cs-c")),
         "edit":
             R(Key("up")),
-        "(send | senden)":
-            R(Key("s-enter"))
-        # TODO: Exit by clicking top left, then down etc... (probabyl works only in full mode or sikuli)
+        "(bold | fett)":
+            R(Text("****") + Key("left:2")),
+        "(emphasize | hervorheben)":
+            R(Text("**") + Key("left")),
+        "(new line | neue zeile)":
+            R(Key("s-enter")),
+        "(block quote | zitat)":
+            R(Text("> ")),
+        "(mention | erwaehnen)":
+            R(Text("@")),
+        "(insert link | link einfuegen)":
+            R(Text("[]()") + Key("left:3")),
+        "(short code | kurzer code)":
+            R(Text("```") + Key("left")),
+        "(insert code | code einfuegen)":
+            R(Text("```") + Key("backspace") + Key("backspace") + Text("```") +
+              Key("s-enter") + Key("s-enter") +
+              Text("```") + Key("backspace") + Key("backspace") + Text("```") + Text("```") + Key("backspace") + Key("backspace") + Key("backspace")+
+              Key("up")),
     }
-    extras = [
-        Dictation("text"),
-    ]
-    Defaults = {}
     
 #---------------------------------------------------------------------------
 

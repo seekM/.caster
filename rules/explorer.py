@@ -15,25 +15,29 @@ class IERule(MergeRule):
     pronunciation = "explorer"
 
     mapping = {
-        "(address bar | adressleiste)":
-            R(Key("c-l"), rdescript="Explorer: Address Bar"),
-        "(new folder | neuer ordner)":
-            R(Key("cs-n"), rdescript="Explorer: New Folder"),
-        # "new file": sikuli # annahme: menue zu sehen
-        "(show | file | folder) properties":
-            R(Key("a-enter"), rdescript="Explorer: Properties Dialog"),
-        "get up":                            
-            R(Key("a-up"), rdescript="Explorer: Navigate up"),
-        "get back":
-            R(Key("a-left"), rdescript="Explorer: Navigate back"),
-        "get forward":
-            R(Key("a-right"), rdescript="Explorer: Navigate forward"),
+        "get up [<n>]":
+            R(Key("a-up"))*Repeat(extra="n"),
+        "get back [<n>]":
+            R(Key("a-left"))*Repeat(extra="n"),
+        "get forward [<n>]":
+            R(Key("a-right"))*Repeat(extra="n"),
+        "new folder":
+            R(Key("cs-n")),
+        "address bar":
+            R(Key("c-l")),
+        "search":
+            R(Key("c-l, tab")),
+        "left pane":
+            R(Key("c-l, tab:2")),
+        "center pane":
+            R(Key("c-l, tab:3")),
+        "sort":
+            R(Key("c-l, tab:4")),
     }
-    extras = [
-        Dictation("text"),
-        IntegerRefST("n", 1, 1000),
-    ]
-    defaults = {"n": 1}
+    extras = [IntegerRefST("n", 1, 10)]
+    defaults = {
+        "n": 1,
+    }
 
 
 #---------------------------------------------------------------------------
@@ -41,11 +45,7 @@ class IERule(MergeRule):
 context = AppContext(executable="explorer")
 grammar = Grammar("Windows Explorer", context=context)
 
-if settings.SETTINGS["apps"]["explorer"]:
-    if settings.SETTINGS["miscellaneous"]["rdp_mode"]:
-        control.nexus().merger.add_global_rule(IERule())
-    else:
-        rule = IERule(name="explorer")
-        gfilter.run_on(rule)
-        grammar.add_rule(rule)
-        grammar.load()
+rule = IERule(name="explorer")
+gfilter.run_on(rule)
+grammar.add_rule(rule)
+grammar.load()
