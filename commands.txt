@@ -72,6 +72,52 @@ organize
 (dateiname | filename)
 (dateityp | file type)
 
+Firefox
+=======
+new tab [<n>]
+reopen tab [<n>]
+show history
+show downloads
+show bookmarks
+[add] bookmark
+cancel bookmark # Call this after [add] bookmark if you want to cancel
+delete bookmark # Call if you are on a page you have bookmarked before
+full screen
+zoom in [<n>]
+zoom out [<n>]
+
+# the following commands requires the vim vixen extension
+scroll down [<n>]
+scroll down half [<n>]
+scroll up [<n>]
+scroll up half [<n>]
+scroll top
+scroll bottom
+reload
+toggle pin
+(loesche pin | delete pin)
+history back [<n>]
+history forward [<n>]
+parent [<n>]
+root
+link # opens in new tab
+link here
+mark <letter>
+jump <letter>
+focus input
+copy url # copy URL in current tab
+clipboard tab # open clipboard's URL in current tab
+clipboard new tab # open clipboard's URL in new tab
+toggle # enables / disables add on
+
+# from nav: next / prior / close tab etc [TODO]
+
+HexChat
+=======
+network list
+
+# from nav: next / prior tab etc [TODO]
+
 Sikuli
 ======
 launch sick IDE
