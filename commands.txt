@@ -1,3 +1,28 @@
+Curse
+=====
+
+Rainbow
+=======
+rainbow # create rainbow grid
+(exit | escape | cancel) # close rainbow grid
+[<pre>] <color> <n> [<action>]
+# [<pre>]: 0-9, default 0
+# <color>:
+# - (red | rot)
+# - (orange | tan | brown | braun)
+# - (yellow | gelb)
+# - (green | gruen)
+# - (blue | blau)
+# - (purple | lila)
+# [<action>]: kick / psychic, default: kick
+
+Douglas
+=======
+douglas # create douglas grid
+(exit | escape | cancel) # close douglas grid
+<n> [by] <n2> [<action>]
+# [<action>]: kick / psychic, default: kick
+
 Notepad++
 =========
 (line | zeile) 
@@ -23,6 +48,8 @@ toggle pane
 (next | naechster) tab
 (previous | vorheriger) tab
 (attach file | datei anhaengen)
+(attachment save | anhang speichern) # via sikuli # requires "Speichern" button
+podcast open # via sikuli # requires visible "Webseite http"
 
 Gitter & Slack
 ==============
