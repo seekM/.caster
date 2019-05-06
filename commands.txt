@@ -92,6 +92,7 @@ sort
 Explorer
 ========
 explorer (datei | file) # via sikuli # erweitertes menue muss sichtbar sein
+explorer git # via sikuli
 
 File Dialogue
 =============
