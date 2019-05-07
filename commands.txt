@@ -3,9 +3,13 @@ Curse
 
 Rainbow
 =======
-rainbow # create rainbow grid
-(exit | escape | cancel) # close rainbow grid
+rainbow                                              # create rainbow grid
+(exit | escape | cancel)                             # close rainbow grid
 [<pre>] <color> <n> [<action>]
+[<pre1>] <color1> <n1> select [<pre2>] <color2> <n2> # select long version
+[<pre1>] <color1> <n1> select <n2>                   # select short version
+select                                               # select point version
+point <point>  
 # [<pre>]: 0-9, default 0
 # <color>:
 # - (red | rot)
@@ -14,14 +18,20 @@ rainbow # create rainbow grid
 # - (green | gruen)
 # - (blue | blau)
 # - (purple | lila)
-# [<action>]: kick / psychic, default: kick
+# [<action>]: kick / psychic / move, default: kick
+# <point>: one / two               
 
 Douglas
 =======
-douglas # create douglas grid
-(exit | escape | cancel) # close douglas grid
+douglas                              # create douglas grid
+(exit | escape | cancel)             # close douglas grid
 <n> [by] <n2> [<action>]
-# [<action>]: kick / psychic, default: kick
+<x1> [by] <y1> select <x2> [by] <y2> # select long version
+<x1> [by] <y1> select <x2>           # select short version
+select                               # select point version
+point <point>  
+# [<action>]: kick / psychic / move, default: kick
+# <point>: one / two               
 
 Notepad++
 =========
