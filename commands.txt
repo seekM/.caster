@@ -1,14 +1,25 @@
 Curse
 =====
 
+Sikuli
+======
+launch sick IDE
+launch sick server
+terminate sick server
+
+General
+=======
+profil (wechseln | change) # via sikuli
+reboot (dragon | caster)
+
 Rainbow
 =======
-rainbow                                              # create rainbow grid
-(exit | escape | cancel)                             # close rainbow grid
+rainbow      # create rainbow grid
+(exit | escape | cancel)     # close rainbow grid
 [<pre>] <color> <n> [<action>]
 [<pre1>] <color1> <n1> select [<pre2>] <color2> <n2> # select long version
-[<pre1>] <color1> <n1> select <n2>                   # select short version
-select                                               # select point version
+[<pre1>] <color1> <n1> select <n2>   # select short version
+select       # select point version
 point <point>  
 # [<pre>]: 0-9, default 0
 # <color>:
@@ -19,19 +30,19 @@ point <point>
 # - (blue | blau)
 # - (purple | lila)
 # [<action>]: kick / psychic / move, default: kick
-# <point>: one / two               
+# <point>: one / two
 
 Douglas
 =======
-douglas                              # create douglas grid
-(exit | escape | cancel)             # close douglas grid
+douglas      # create douglas grid
+(exit | escape | cancel)     # close douglas grid
 <n> [by] <n2> [<action>]
 <x1> [by] <y1> select <x2> [by] <y2> # select long version
-<x1> [by] <y1> select <x2>           # select short version
-select                               # select point version
+<x1> [by] <y1> select <x2>   # select short version
+select       # select point version
 point <point>  
 # [<action>]: kick / psychic / move, default: kick
-# <point>: one / two               
+# <point>: one / two
 
 Notepad++
 =========
@@ -156,12 +167,100 @@ network list
 
 # from nav: next / prior tab etc [TODO]
 
-Sikuli
-======
-launch sick IDE
-launch sick server
-terminate sick server
-
-General
+GitBash
 =======
-profil (wechseln | change) # via sikuli
+
+Basics
+------
+
+get (initialize|initialisieren)
+
+get (status|zustand)
+get (status briefly|zustand kurz)
+
+get (append file|datei hinzufuegen)
+get (append directory|ordner hinzufuegen)
+get (append all|alle hinzufuegen)
+
+get difference file
+get difference
+get difference staged
+
+get commit
+get commit message     # message
+
+get (remove|entfernen) # file
+get remove force       # file
+
+get (rename|umbenennen) # file1 file2
+
+get unmodify file                     # file
+get (unstage file|datei rueckgaengig) # file
+get reset repository
+get (redo commit|commit wiederholen)  # message
+
+# Branches
+----------
+
+get branch                          # branch
+
+get (switch|checkout)               # branch
+
+get branch (delete|entfernen)       # branch
+get branch (delete|entfernen) force # branch
+
+get branch (combine|kombiniert)         # branch
+      
+get (reset branch|branch zuruecksetzen) # branch
+
+# Merging
+---------
+
+get (merge|vereinen)# branch
+
+get (show merged|zeige vereinigt)
+get (show not merged|zeige nicht vereinigt)
+
+get (logging|aufzeichnung) graph
+get (logging|aufzeichnung) patch <n> # number
+get (logging|aufzeichnung) statistic
+
+# Remotes
+---------
+
+get (clone|kopieren)       # url
+get append remote          # remote_repository(e.g. upstream) url
+get (show|zeige) remotes
+
+get (show|zeige) remote branches
+get fetch remote                 # remote_repository
+get push new branch              # remote_repository branch
+get push branch                  # remote_repository branch
+
+get (tracking|verfolgungs) branch             # branch remote_repository/branch
+get (show tracking|zeige verfolgungs) branches 
+get (delete|entferne) remote branch           # remote_repository branch
+
+# Rebasing
+----------
+
+get base # branch
+     
+# Miscellaneous
+---------------
+
+get (stash|versteck)                   # message
+get (stash|versteck) include untracked # message
+get (stash|versteck) list show
+get (stash apply|versteck anwenden)
+get (dropping stash|versteck verwerfen)
+
+get (search|suche)                     # searchterm
+
+# Other
+-------
+
+CD up
+CD
+list
+make directory
