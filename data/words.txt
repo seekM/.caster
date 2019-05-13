@@ -1,0 +1,24 @@
+#Alphabet                                 (castervoice/lib/ccr/core/alphabet.py)
+#==============================================================================
+<<<EXTRA>>>
+arch -> air
+brov -> bat
+char -> cap
+delta -> drum
+echo -> each
+foxy -> fine
+goof -> gust
+hotel -> harp
+India -> sit
+julia -> jury
+Lima -> look
+Mike -> made
+Quebec -> quench
+Sierra -> sun
+tango -> trap
+victor -> vest
+x-ray -> plex
+
+# todo
+enable -> (enable | aktiviere)
+disable -> (disable | deaktivere)

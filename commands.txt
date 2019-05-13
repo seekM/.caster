@@ -1,19 +1,30 @@
-Curse
-=====
+Numbers                                   (castervoice/lib/ccr/core/numbers.py)
+                                                      (.caster/rules/zahlen.py)
+===============================================================================
+word digit  <0..9>   # print digit as english word
+wort ziffer <0..9>   # print digit as german word
+number <0..1000000>  # print digit as digit
 
-Sikuli
-======
+Alphabet                                 (castervoice/lib/ccr/core/alphabet.py)
+===============================================================================
+[big] <letter>
+# <letter>:
+# air bat cap drum each fine gust harp sit jury kilo look made novakeen oscar
+# prime quench romeo sun trap uniform vest whiskey plex yankee zulu
+
+Sikuli                                    (castervoice/asynch/sikuli/sikuli.py)
+===============================================================================
 launch sick IDE
 launch sick server
 terminate sick server
 
-General
-=======
+General                                               (.caster/rules/dragon.py)
+===============================================================================
 profil (wechseln | change) # via sikuli
 reboot (dragon | caster)
 
-Rainbow
-=======
+Rainbow                                          (.caster/rules/gridrainbow.py)
+===============================================================================
 rainbow      # create rainbow grid
 (exit | escape | cancel)     # close rainbow grid
 [<pre>] <color> <n> [<action>]
@@ -32,8 +43,8 @@ point <point>
 # [<action>]: kick / psychic / move, default: kick
 # <point>: one / two
 
-Douglas
-=======
+Douglas                                          (.caster/rules/griddouglas.py)
+===============================================================================
 douglas      # create douglas grid
 (exit | escape | cancel)     # close douglas grid
 <n> [by] <n2> [<action>]
@@ -44,14 +55,14 @@ point <point>
 # [<action>]: kick / psychic / move, default: kick
 # <point>: one / two
 
-Notepad++
-=========
+Notepad++                                    (.caster/rules/notepadplusplus.py)
+===============================================================================
 (line | zeile) 
 (save | speichern)
 (save as | speichern als)
 
-Thunderbird
-===========
+Thunderbird                                      (.caster/rules/thunderbird.py)
+===============================================================================
 (new message | neue nachricht)
 (reply | antworten)
 (reply all | allen antworten)
@@ -72,8 +83,8 @@ toggle pane
 (attachment save | anhang speichern) # via sikuli # requires "Speichern" button
 podcast open # via sikuli # requires visible "Webseite http"
 
-Gitter & Slack
-==============
+Gitter & Slack                                                      (see below)
+===============================================================================
 (search | suche)
 edit
 (bold | fett)
@@ -84,22 +95,22 @@ edit
 (short code | kurzer code)
 (insert code | code einfuegen)
 
-Gitter
-======
+Gitter                                                 (.caster/rules/gitter.py)
+===============================================================================
 (rooms | raeume)
 chat
 (gitter close | gitter schließen) # via sikuli
 (insert link | link einfuegen)
 
-Slack
-=====
+Slack                                                  (.caster/rules/slack.py)
+===============================================================================
 (up | hoch)
 (down | runter)
 (next message | naechste nachricht)
 (previous message | vorherige nachricht)
 
-Explorer & File Dialogue
-========================
+Explorer & File Dialogue                                            (see below)
+===============================================================================
 get up [<n>]
 get back [<n>]
 get forward [<n>]
@@ -110,19 +121,19 @@ left pane
 center pane
 sort
 
-Explorer
-========
+Explorer                                            (.caster/rules/explorer.py)
+===============================================================================
 explorer (datei | file) # via sikuli # erweitertes menue muss sichtbar sein
 explorer git # via sikuli
 
-File Dialogue
-=============
+File Dialogue                                  (.caster/rules/file_dialogue.py)
+===============================================================================
 organize
 (dateiname | filename)
 (dateityp | file type)
 
-Firefox
-=======
+Firefox                                              (.caster/rules/firefox.py)
+===============================================================================
 new tab [<n>]
 reopen tab [<n>]
 show history
@@ -161,14 +172,14 @@ toggle # enables / disables add on
 
 # from nav: next / prior / close tab etc [TODO]
 
-HexChat
-=======
+HexChat                                              (.caster/rules/hexchat.py)
+===============================================================================
 network list
 
 # from nav: next / prior tab etc [TODO]
 
-GitBash
-=======
+GitBash                                              (.caster/rules/gitbash.py)
+===============================================================================
 
 Basics
 ------
