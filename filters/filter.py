@@ -24,12 +24,12 @@ def replace_spec_scenario(mp):
 
 def update_carrot(rule):
     if "carrot" in rule.mapping_actual().keys():
-        rule.mapping_actual()["carrot"] = R(Text("^") + Text("^") + Key("left") + Key("delete"))
+        rule.mapping_actual()["carrot"] = R(Key("caret") + Key("left") + Key("delete"))
 
 def fix_carrot_german_windows10_scenario(mp):
     if mp.time == MergeInf.BOOT:
         if mp.rule1 is not None :
-            update_carrot(mp.rule1)
+            update_carrot(mp.rule1)   
         update_carrot(mp.rule2)
 
 control.nexus().merger.add_filter(replace_spec_scenario)
