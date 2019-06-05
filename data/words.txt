@@ -1,4 +1,4 @@
-#Alphabet                                 (castervoice/lib/ccr/core/alphabet.py)
+#Alphabet                                (castervoice/lib/ccr/core/alphabet.py)
 #==============================================================================
 <<<EXTRA>>>
 arch -> air
@@ -19,6 +19,73 @@ tango -> trap
 victor -> vest
 x-ray -> plex
 
-# todo
+#Punctuation                          (castervoice/lib/ccr/core/punctuation.py)
+#==============================================================================
+<<<ANY>>>
+semper -> (semper|semi)
+prekris -> (prekris|rund)
+brax -> (brax|eck)
+curly -> (curly|klamm)
+angle -> (angle|wink)   
+<<<EXTRA>>>
+long -> (long|lang)             
+<<<SPEC>>>
+equals -> (equals|gleich) 
+ace -> (ace|leer)
+clamor -> (clamor|aus)                  
+starling -> (starling|stern)
+questo -> (questo|fra)
+carrot -> (carrot|wink)
+hash tag -> (hash tag|raute)
+apostrophe -> (apostrophe|appo)
+underscore -> (underscore|unter)
+Dolly -> (Dolly|doll)
+tabby -> (tabby|tabbi)  
+ampersand -> (ampersand|kauf)
+tilde -> tilt   
+
+#Comparisons                          (castervoice/lib/ccr/core/punctuation.py)
+#==============================================================================
+[is] greater than -> (greater than | größer als)
+[is] less than -> (fewer than | weniger als)
+[is] greater [than] [or] equal [to] -> (greater equal | größer gleich)
+[is] less [than] [or] equal [to] -> (less equal | weniger gleich)
+[is] equal to -> (equal to | gleich zu)
+
+#Cursor Text                                  (castervoice/lib/ccr/core/nav.py)
+#==============================================================================
+<<<ANY>>>
+sauce -> (sauce|hoch)
+dunce -> (dunce|unten)
+lease -> (lease|links)
+Ross  -> (ross|rechts)
+
+#Selection, Movement                          (castervoice/lib/ccr/core/nav.py)
+#==============================================================================
+shackle -> (shackle|schuffel)
+shin -> (shin|schein)
+queue -> (queue|kiu)
+wally -> (wally|walli)
+hug -> (hug|umarme)
+
+#Basic Mouse Movements                         (castervoice/lib/ccr/core/nav.py)
+#===============================================================================
+curse -> (curse|maus)
+scree -> (scree|scroll)
+
+#Template-based navigation                    (castervoice/lib/ccr/core/nav.py)
+#==============================================================================
+jump in -> (jump in | springe rein)
+jump out -> (jump out | springe raus)
+jump back -> (jump back | springe zurück)
+jump back in -> (jump back in | springe zurück rein)
+
+#Window management                            (castervoice/lib/ccr/core/nav.py)
+#                                                                  (_caster.py)
+#==============================================================================
+
+Other
+#==============================================================================
+<<<EXTRA>>>
 enable -> (enable | aktiviere)
 disable -> (disable | deaktivere)

@@ -1,5 +1,5 @@
 ccr_on = true
-enabling_order = [ "sequel", "Test", "tisch", "Zahlen",]
+enabling_order = [ "sequel", "Test", "tisch", "Zahlen", "zahlen", "test",]
 
 [app]
 "flash develop test" = false
@@ -16,7 +16,7 @@ VHDL = false
 Alphabet = false
 tisch = true
 Punctuation = false
-zahlen = false
+zahlen = true
 hacks = false
 CPP = false
 prolog = false
@@ -32,6 +32,7 @@ Dart = false
 HTML = false
 matlab = false
 Test = true
+test = true
 Bash = false
 sequel = true
 Rlang = false
@@ -45,6 +46,7 @@ Prolog = false
 latex = false
 Markdown = false
 Zahlen = true
+decker = false
 Numbers = false
 SQL = false
 Go = false

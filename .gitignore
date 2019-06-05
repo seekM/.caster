@@ -1,3 +1,8 @@
 local
 *.class
 *.pyc
+log.txt
+data/aliases.toml
+data/bringme.toml
+data/configdebug.txt
+data/recorded_macros.toml

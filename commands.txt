@@ -12,25 +12,131 @@ Alphabet                                 (castervoice/lib/ccr/core/alphabet.py)
 # air bat cap drum each fine gust harp sit jury kilo look made novakeen oscar
 # prime quench romeo sun trap uniform vest whiskey plex yankee zulu
 
-Sikuli                                    (castervoice/asynch/sikuli/sikuli.py)
+Punctuation                           (castervoice/lib/ccr/core/punctuation.py)
 ===============================================================================
-launch sick IDE
-launch sick server
-terminate sick server
+semper|semi                 ;
+quotes|zit                  "" 
+small quotes|zit klei       ''
+prekris|rund                ()
+brax|eck                    []
+curly|klamm                 {}
+angle|wink                  <>
+[<long|lang>] equals|gleich = # bei lo/ang: mit leerzeichen davor u. dahinter
+[<long|lang>] plus          + # bei lo/ang: mit leerzeichen davor u. dahinter
+[<long|lang>] minus         - # bei lo/ang: mit leerzeichen davor u. dahinter
+pipe symbol|rohr            |
+long symbol|lang rohr       | # bei lo/ang: mit leerzeichen davor u. dahinter
+(ace|leer) [0..9]             # mit leerzeichen davor u. dahinter
+clamor|aus                  !
+double                      :
+long double                 : # mit leerzeichen davor u. dahinter
+starling|stern              *
+questo|aus                  ?
+comma|komm                  ,
+boom                        , # mit leerzeichen dahinter
+carrot|wink                 ^ 
+(period | dot)              .
+atty                        @
+hash tag|raute              #
+apostrophe|appo             '
+underscore|unter            _
+backslash                   \
+slash                       /
+Dolly|doll                  $
+modulo                      %
+tabby|tabbi [0..9]          <tab>
+ampersand|kauf              &
+tilt                        ~
 
-General                                               (.caster/rules/dragon.py)
+Comparisons                           (castervoice/lib/ccr/core/punctuation.py)
 ===============================================================================
-profil (wechseln | change) # via sikuli
-reboot (dragon | caster)
+(greater than | größer als)
+(fewer than | weniger als)
+(greater equal | größer gleich)
+(less equal | weniger gleich)
+(equal to | gleich zu)
+
+Cursor Text                                   (castervoice/lib/ccr/core/nav.py)
+===============================================================================
+(sauce|hoch)  [<repeat_anzahl>]
+(dunce|unten) [<repeat_anzahl>]
+(lease|links) [<repeat_anzahl>]
+(ross|rechts) [<repeat_anzahl>]
+
+Editing                                       (castervoice/lib/ccr/core/nav.py)
+===============================================================================
+clear                       backspace
+deli                        delete
+shock                       enter
+escape                      escape
+save                        ctr-s
+
+Selection, Movement                           (castervoice/lib/ccr/core/nav.py)
+===============================================================================
+(shackle|schuffel)                    select line
+(shin|schein) [<dir>] [<anzahl>]      shift - <dir>                         
+(queue|kiu)                           ctrl - shift - <dir>
+fly [<dir>] [<anzahl>]                ctrl - <dir>                               
+splat [<dir>] [<anzahl>]              ctrl - delete / backspace
+(hoch/unten) (wally|walli)            top / bottom
+tell sink                             end + enter
+tell dock                             end + semicolon + enter
+hug <rund/eck/klamm/wink>             encloses target (engl. sepcs analog)
+
+Copy and Paste                                (castervoice/lib/ccr/core/nav.py)
+===============================================================================
+stoosh [<clipboard slot>]                 copy
+cut [<clipboard slot>]                    cut
+spark [<clipboard slot>] [<format_param>] paste
+garb [<clipboard slot>]                   double-click + copy
+drop [<clipboard slot>]                   double-click + paste                                 
+duple [<repeat_anzahl>]                   duplicate line 
+# [<format_param>] see below, e.g. spark tie bow
+
+Programming Core                                                           TODO
+===============================================================================
+
+Text Formatting                               (castervoice/lib/ccr/core/nav.py)
+===============================================================================
+<capitalization>      TEXT # für gerrish ist spacing=gum, ansonsten leerzeichen
+<spacing>             TEXT # spacing=laws
+<capitalization> <spacing> TEXT
+# capitalization:
+# - yell                  EIN PAAR WORTE
+# - tie                   Ein Paar Worte # wenn deutsch: tie deusch mit "i" &"e"
+# - sing                  Ein paar worte 
+# - laws                  ein paar worte
+# - gerrish               einPaarWorte
+# spacing:
+# - gum                   einpaarworte
+# - spine                 ein-paar-worte
+# - snake                 ein_paar_worte
+# - pebble                ein.paar.worte
+# - incline               ein/paar/worte
+# - dissent               ein\paar\worte   
+
+Format setting                                (castervoice/lib/ccr/core/nav.py)
+===============================================================================
+set [big] format <capitalization> <spacing> # set a standard / secondary format
+[big] format <dictation>                    # apply standard / secondary format
+
+Basic Mouse Movements                         (castervoice/lib/ccr/core/nav.py)
+===============================================================================
+kick 
+psychic
+scroll <direction> [<repeat>]
+(curse|maus) <direction> [<direction>] [1..500] [<action>]
+# direction: see Cursor Text above
+# [<action>]: kick / psychic
 
 Rainbow                                          (.caster/rules/gridrainbow.py)
 ===============================================================================
-rainbow      # create rainbow grid
-(exit | escape | cancel)     # close rainbow grid
+rainbow                                              # create rainbow grid
+(exit | escape | cancel)                             # close rainbow grid
 [<pre>] <color> <n> [<action>]
 [<pre1>] <color1> <n1> select [<pre2>] <color2> <n2> # select long version
-[<pre1>] <color1> <n1> select <n2>   # select short version
-select       # select point version
+[<pre1>] <color1> <n1> select <n2>                   # select short version
+select                                               # select point version
 point <point>  
 # [<pre>]: 0-9, default 0
 # <color>:
@@ -45,15 +151,74 @@ point <point>
 
 Douglas                                          (.caster/rules/griddouglas.py)
 ===============================================================================
-douglas      # create douglas grid
-(exit | escape | cancel)     # close douglas grid
+douglas                              # create douglas grid
+(exit | escape | cancel)             # close douglas grid
 <n> [by] <n2> [<action>]
 <x1> [by] <y1> select <x2> [by] <y2> # select long version
-<x1> [by] <y1> select <x2>   # select short version
-select       # select point version
+<x1> [by] <y1> select <x2>           # select short version
+select                               # select point version
 point <point>  
 # [<action>]: kick / psychic / move, default: kick
 # <point>: one / two
+
+Template-based navigation                     (castervoice/lib/ccr/core/nav.py)
+===============================================================================
+jump in      | springe rein          # move cursor past next ([{<
+jump out     | springe raus          # move cursor past next )]}>  
+jump back    | springe zurück        # move cursor before prior ([{< 
+jump back in | springe zurück rein   # move cursor past prior )]}> 
+
+Window management                             (castervoice/lib/ccr/core/nav.py)
+                                                                   (_caster.py)
+===============================================================================
+minimize|mini alle    # alle fenster ausblenden
+maximize|maxi alle    # alle fenster einblenden
+mini                  # fenster minimieren
+maxi                  # fenster maximieren
+dredge                # a-tab
+windows|fenster       # list all windows            
+
+Repetition                             (castervoice/lib/ccr/recording/again.py)
+                                               (castervoice/lib/ccr/history.py)
+===============================================================================
+again do|nochmal machen                # Repeat last dictation
+again x times |nochmal x mal           # Repeat last dictation x times
+
+record from history|historie aufnehmen # open gui
+make repeatable                        # check the corresponding box
+check x                                # check the corresponding box
+check from x to y                      # check the corresponding boxes  
+complete                               # save macro and close gui
+delete recorded macros|lösche macros   # delete marcros 
+                                       # (stored in recorded_macros.toml)
+MACRO times x                          # Execute macro x times 
+
+Aliasing                               (castervoice/lib/ccr/recording/alias.py)
+===============================================================================
+# highlight text, then say one of both
+alias       # not CCR 
+chain alias # CCR 
+# a gui opens, enter spec, then say
+complete
+# and you can use the spec to type highlighted text
+# to delete specs delete / modify configaliases.txt
+
+Bring me                             (castervoice/lib/ccr/recording/bringme.py)
+===============================================================================
+(bring me|hole mir) <key> # open new instance of program / folder, open 
+                        # file / website in existing instance (or new if none
+                        # exists) as per <key>. <key> specified in bringme.toml
+
+General                                               (.caster/rules/dragon.py)
+===============================================================================
+profil (wechseln | change) # via sikuli
+reboot dragon
+
+Sikuli                                    (castervoice/asynch/sikuli/sikuli.py)
+===============================================================================
+launch sick IDE
+launch sick server
+terminate sick server
 
 Notepad++                                    (.caster/rules/notepadplusplus.py)
 ===============================================================================
@@ -180,10 +345,8 @@ network list
 
 GitBash                                              (.caster/rules/gitbash.py)
 ===============================================================================
-
 Basics
-------
-
+-------------------------------------------------------------------------------
 get (initialize|initialisieren)
 
 get (status|zustand)
@@ -211,8 +374,7 @@ get reset repository
 get (redo commit|commit wiederholen)  # message
 
 # Branches
-----------
-
+-------------------------------------------------------------------------------
 get branch                          # branch
 
 get (switch|checkout)               # branch
@@ -225,8 +387,7 @@ get branch (combine|kombiniert)         # branch
 get (reset branch|branch zuruecksetzen) # branch
 
 # Merging
----------
-
+-------------------------------------------------------------------------------
 get (merge|vereinen)# branch
 
 get (show merged|zeige vereinigt)
@@ -237,8 +398,7 @@ get (logging|aufzeichnung) patch <n> # number
 get (logging|aufzeichnung) statistic
 
 # Remotes
----------
-
+-------------------------------------------------------------------------------
 get (clone|kopieren)       # url
 get append remote          # remote_repository(e.g. upstream) url
 get (show|zeige) remotes
@@ -253,13 +413,11 @@ get (show tracking|zeige verfolgungs) branches
 get (delete|entferne) remote branch           # remote_repository branch
 
 # Rebasing
-----------
-
+-------------------------------------------------------------------------------
 get base # branch
      
 # Miscellaneous
----------------
-
+-------------------------------------------------------------------------------
 get (stash|versteck)                   # message
 get (stash|versteck) include untracked # message
 get (stash|versteck) list show
@@ -269,8 +427,7 @@ get (dropping stash|versteck verwerfen)
 get (search|suche)                     # searchterm
 
 # Other
--------
-
+-------------------------------------------------------------------------------
 CD up
 CD
 list
