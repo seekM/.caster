@@ -211,9 +211,11 @@ Bring me                             (castervoice/lib/ccr/recording/bringme.py)
 
 General                                               (.caster/rules/dragon.py)
 ===============================================================================
-profil (wechseln | change) # via sikuli
 reboot dragon
-
+(profil wechseln |change profile)
+(vokabel|vocable)
+(vokabeleditor|vocable editor)
+            
 Sikuli                                    (castervoice/asynch/sikuli/sikuli.py)
 ===============================================================================
 launch sick IDE
