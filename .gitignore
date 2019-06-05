@@ -4,5 +4,6 @@ local
 log.txt
 data/aliases.toml
 data/bringme.toml
+data/clipboard.toml
 data/configdebug.txt
 data/recorded_macros.toml
