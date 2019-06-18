@@ -38,7 +38,7 @@ questo -> (questo|fra)
 carrot -> (carrot|wink)
 hash tag -> (hash tag|raute)
 apostrophe -> (apostrophe|appo)
-underscore -> (underscore|unter)
+underscore -> (underscore|strich)
 Dolly -> (Dolly|doll)
 tabby -> (tabby|tabbi)  
 ampersand -> (ampersand|kauf)
@@ -71,7 +71,7 @@ hug -> (hug|umarme)
 #Basic Mouse Movements                         (castervoice/lib/ccr/core/nav.py)
 #===============================================================================
 curse -> (curse|maus)
-scree -> (scree|scroll)
+scree -> (scree|roll)
 
 #Template-based navigation                    (castervoice/lib/ccr/core/nav.py)
 #==============================================================================

@@ -39,7 +39,7 @@ carrot|wink                 ^
 atty                        @
 hash tag|raute              #
 apostrophe|appo             '
-underscore|unter            _
+underscore|strich           _
 backslash                   \
 slash                       /
 Dolly|doll                  $
@@ -215,6 +215,7 @@ reboot dragon
 (profil wechseln |change profile)
 (vokabel|vocable)
 (vokabeleditor|vocable editor)
+(volume|lautstärke) (((up|down) [<n>]) |mute)
             
 Sikuli                                    (castervoice/asynch/sikuli/sikuli.py)
 ===============================================================================

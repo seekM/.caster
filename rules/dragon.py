@@ -23,8 +23,10 @@ class DragonRule(MergeRule):
     pronunciation = "dragon"
 
     mapping = {
-        "reboot (dragon|caster)":
-            R(Function(utilities.reboot), rdescript="Reboot Dragon Naturallyspeaking"),
+        "reboot (dragon|caster) (german|deutsch)":
+            R(Function(utilities.reboot_Deutsch), rdescript="Reboot Dragon Naturallyspeaking"),
+        "reboot (dragon|caster) (english|englisch)":
+            R(Function(utilities.reboot_Englisch), rdescript="Reboot Dragon Naturallyspeaking"),
     }
 
     extras = [

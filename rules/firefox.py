@@ -25,7 +25,7 @@ class FirefoxRule(MergeRule):
     pronunciation = "fire fox"
 
     mapping = {
-        "new tab [<n>]":
+        "(new tab|neuer Tab) [<n>]":
             R(Key("c-t"))*Repeat(extra="n"),
         "reopen tab [<n>]":
             R(Key("cs-t"))*Repeat(extra="n"),
@@ -47,15 +47,17 @@ class FirefoxRule(MergeRule):
             R(Key("c-plus/20"))*Repeat(extra="n"),
         "zoom out [<n>]":
             R(Key("c-minus/20"))*Repeat(extra="n"),
-
+        "(leiste | address bar)":
+            R(Key("c-l")),
+        
         # the following commands requires the vim vixen extension
-        "scroll down [<n>]":
+        "(scroll down | runter) [<n>]":
             R(Key("c-f"))*Repeat(extra="n"),
-        "scroll down half [<n>]":
+        "(scroll down | runter) half [<n>]":
             R(Key("c-d"))*Repeat(extra="n"),
-        "scroll up [<n>]":
+        "(scroll up | hoeher) [<n>]":
             R(Key("c-b"))*Repeat(extra="n"),
-        "scroll up half [<n>]":
+        "(scroll up | hoeher) half [<n>]":
             R(Key("c-u"))*Repeat(extra="n"),
         "scroll top":
             R(Key("g") + Key("g")),
@@ -67,9 +69,9 @@ class FirefoxRule(MergeRule):
             R(Key("z") + Key("p")),
         "(loesche pin | delete pin)":
             R(Key("!") + Key("d")),
-        "history back [<n>]":
+        "(history back|zurueck) [<n>]":
             R(Key("H"))*Repeat(extra="n"),
-        "history forward [<n>]":
+        "(history forward|vorwaerts) [<n>]":
             R(Key("L"))*Repeat(extra="n"),
         "parent [<n>]":
             R(Key("g") + Key("u"))*Repeat(extra="n"),

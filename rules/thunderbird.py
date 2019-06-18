@@ -47,7 +47,7 @@ class ThunderbirdRule(MergeRule):
             R(Key("j")),
         "(toggle star | favorit)":
             R(Key("s")),
-        "(next message | naechste nachricht)":
+        "(next message | weitere nachricht)":
             R(Key("n")),
         "(previous message | vorherige nachricht)":
             R(Key("p")),
